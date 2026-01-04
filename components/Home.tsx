@@ -185,7 +185,7 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1.5 }}
-        className="absolute bottom-28 md:bottom-36 w-full flex flex-col items-center gap-5 z-20"
+        className="absolute bottom-16 md:bottom-24 w-full flex flex-col items-center gap-6 z-20"
       >
         <div className="text-center max-w-2xl px-8">
           <p className="text-[10px] md:text-[11px] tracking-[0.4em] font-light leading-relaxed uppercase text-zinc-500/80 font-retro-mono"
@@ -193,7 +193,7 @@ const BrutalistHero = () => {
             BUILDING DIGITAL EXPERIENCES . SHIPPING PRODUCTS THAT MATTER
           </p>
         </div>
-        <div className="flex items-center gap-6 text-[8px] md:text-[9px] font-vhs text-white/30 tracking-widest mt-2">
+        <div className="flex items-center gap-6 text-[8px] md:text-[9px] font-vhs text-white/30 tracking-widest mt-3">
           <span className="vhs-chromatic">●</span>
           <span className="vhs-chromatic">AVAILABLE FOR PROJECTS</span>
           <span className="vhs-chromatic">●</span>
