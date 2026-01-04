@@ -76,7 +76,7 @@ const BrutalistHero = () => {
             scale: [1, 1.05, 1]
           }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-purple-500 blur-[120px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-purple-500 blur-[120px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -88,7 +88,7 @@ const BrutalistHero = () => {
             scale: [1, 1.03, 1]
           }}
           transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-fuchsia-400 blur-[80px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-fuchsia-400 blur-[80px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -99,7 +99,7 @@ const BrutalistHero = () => {
             opacity: [0.8, 1, 0.8],
           }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-pink-300 blur-[50px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-pink-300 blur-[50px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -110,7 +110,7 @@ const BrutalistHero = () => {
             opacity: [0.6, 0.8, 0.6],
           }}
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-orange-200 blur-[30px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-orange-200 blur-[30px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -124,7 +124,7 @@ const BrutalistHero = () => {
             opacity: [0.15, 0.22, 0.15] 
           }}
           transition={{ duration: 0.2, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-red-400/40 blur-[3px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-red-400/40 blur-[3px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -137,7 +137,7 @@ const BrutalistHero = () => {
             opacity: [0.15, 0.22, 0.15] 
           }}
           transition={{ duration: 0.2, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-cyan-300/35 blur-[3px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-cyan-300/35 blur-[3px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
