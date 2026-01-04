@@ -188,14 +188,15 @@ const BrutalistHero = () => {
         className="absolute bottom-24 md:bottom-32 w-full flex flex-col items-center gap-4 z-20"
       >
         <div className="text-center max-w-2xl px-8">
-          <p className="text-[10px] md:text-[11px] tracking-[0.4em] font-light leading-relaxed uppercase text-zinc-500/80">
+          <p className="text-[10px] md:text-[11px] tracking-[0.4em] font-light leading-relaxed uppercase text-zinc-500/80 font-retro-mono"
+            style={{ textShadow: '-1px 0 2px rgba(255, 0, 0, 0.2), 1px 0 2px rgba(0, 255, 255, 0.2)' }}>
             BUILDING DIGITAL EXPERIENCES . SHIPPING PRODUCTS THAT MATTER
           </p>
         </div>
-        <div className="flex items-center gap-6 text-[8px] md:text-[9px] font-mono text-white/30 tracking-widest">
-          <span>●</span>
-          <span>AVAILABLE FOR PROJECTS</span>
-          <span>●</span>
+        <div className="flex items-center gap-6 text-[8px] md:text-[9px] font-vhs text-white/30 tracking-widest">
+          <span className="vhs-chromatic">●</span>
+          <span className="vhs-chromatic">AVAILABLE FOR PROJECTS</span>
+          <span className="vhs-chromatic">●</span>
         </div>
       </motion.div>
     </section>
