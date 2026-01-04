@@ -35,7 +35,7 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 0.6, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="absolute top-20 right-8 md:top-32 md:right-16 z-30 text-right heavy-grain"
+        className="absolute top-24 right-8 md:top-36 md:right-16 z-30 text-right heavy-grain"
       >
         <div className="text-[9px] md:text-[10px] font-retro-mono tracking-[0.4em] text-white/70 mb-2 vhs-chromatic">
           2025
