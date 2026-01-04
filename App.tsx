@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Cursor from './components/Cursor';
 import GrainOverlay from './components/GrainOverlay';
 import PrismaticBackground from './components/PrismaticBackground';
+import Navbar from './components/Navbar';
 
 const App: React.FC = () => {
   const [isBooting, setIsBooting] = useState<boolean>(true);
