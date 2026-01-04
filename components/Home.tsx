@@ -147,19 +147,19 @@ const BrutalistHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-center vhs-jitter cinematic-glow vhs-chromatic"
+          className="relative text-[11rem] md:text-[19rem] font-retro-poster leading-none text-center vhs-jitter cinematic-glow vhs-chromatic"
           style={{ 
             color: '#f5f5dc',
-            fontWeight: 600,
-            letterSpacing: '0.08em',
+            fontWeight: 400,
+            letterSpacing: '0.05em',
             textShadow: `
-              0 0 20px rgba(255, 255, 255, 0.4),
-              0 0 40px rgba(236, 72, 153, 0.5),
-              0 0 60px rgba(168, 85, 247, 0.6),
-              0 0 80px rgba(147, 51, 234, 0.5),
-              0 0 100px rgba(126, 34, 206, 0.4),
-              -3px 0 4px rgba(255, 0, 0, 0.5),
-              3px 0 4px rgba(0, 255, 255, 0.5)
+              0 0 25px rgba(255, 255, 255, 0.5),
+              0 0 50px rgba(236, 72, 153, 0.6),
+              0 0 75px rgba(168, 85, 247, 0.7),
+              0 0 100px rgba(147, 51, 234, 0.6),
+              0 0 130px rgba(126, 34, 206, 0.5),
+              -4px 0 6px rgba(255, 0, 0, 0.6),
+              4px 0 6px rgba(0, 255, 255, 0.6)
             `
           }}
         >
