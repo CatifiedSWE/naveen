@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
         {/* Center - Date & Time */}
         <div className="flex items-center gap-3 md:gap-4 text-xs md:text-sm font-vhs">
-          <span className="text-amber-200 tracking-widest">{currentDate}</span>
+          <span className="text-white tracking-widest">{currentDate}</span>
           <span className="text-white/40">|</span>
           <span className="text-amber-200/80 tracking-widest">{currentTime}</span>
         </div>
