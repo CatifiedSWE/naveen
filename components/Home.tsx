@@ -18,7 +18,7 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 0.6, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="absolute top-20 left-8 md:top-32 md:left-16 z-30 text-[9px] md:text-[10px] font-retro-mono tracking-[0.3em] text-white/60 uppercase space-y-2 heavy-grain"
+        className="absolute top-24 left-8 md:top-36 md:left-16 z-30 text-[9px] md:text-[10px] font-retro-mono tracking-[0.3em] text-white/60 uppercase space-y-2 heavy-grain"
         style={{ textShadow: '-1px 0 2px rgba(255, 0, 0, 0.2), 1px 0 2px rgba(0, 255, 255, 0.2)' }}
       >
         <div className="flex items-center gap-2">
