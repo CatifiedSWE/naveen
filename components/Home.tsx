@@ -10,56 +10,85 @@ const BrutalistHero = () => {
       <HeroBackground />
       
       {/* Analog Overlays Specific to Hero */}
-      <div className="absolute inset-0 pointer-events-none scanlines opacity-[0.15] z-10" />
+      <div className="absolute inset-0 pointer-events-none scanlines opacity-[0.12] z-10 vhs-flicker" />
       
       <div className="relative flex flex-col items-center z-20">
-        {/* VHS Chromatic Jitter Layer (Behind) */}
+        {/* Chromatic Dispersion Layers (Medium Intensity) - Behind Text */}
+        {/* Red Channel Offset */}
         <motion.div
-          animate={{ x: [-2, 2, -2], opacity: [0.1, 0.2, 0.1] }}
-          transition={{ duration: 0.15, repeat: Infinity }}
-          className="absolute inset-0 text-[12rem] md:text-[20rem] font-black tracking-tighter leading-none text-rose-500/30 blur-[4px] pointer-events-none select-none text-center"
-          style={{ fontFamily: 'Inter' }}
+          animate={{ 
+            x: [-3, 3, -3], 
+            y: [1, -1, 1],
+            opacity: [0.12, 0.18, 0.12] 
+          }}
+          transition={{ duration: 0.2, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-red-500/30 blur-[3px] pointer-events-none select-none text-center"
+        >
+          NAVEEN
+        </motion.div>
+        
+        {/* Cyan Channel Offset */}
+        <motion.div
+          animate={{ 
+            x: [3, -3, 3], 
+            y: [-1, 1, -1],
+            opacity: [0.12, 0.18, 0.12] 
+          }}
+          transition={{ duration: 0.2, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-cyan-400/25 blur-[3px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
 
-        {/* Sharp Primary Title */}
+        {/* Soft Bloom Glow Layer */}
+        <motion.div
+          animate={{ 
+            opacity: [0.3, 0.4, 0.3],
+            scale: [1, 1.02, 1]
+          }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-white/20 blur-[60px] pointer-events-none select-none text-center"
+        >
+          NAVEEN
+        </motion.div>
+
+        {/* Sharp Primary Title - Retro Poster Aesthetic */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative text-[12rem] md:text-[20rem] font-black tracking-tighter leading-none text-white text-center vhs-jitter"
-          style={{ fontFamily: 'Inter' }}
+          className="relative text-[11rem] md:text-[19rem] font-retro-poster tracking-tight leading-none text-white text-center vhs-jitter text-bloom"
         >
           NAVEEN
         </motion.h1>
 
-        {/* Secondary Line */}
+        {/* Secondary Line - Refined Spacing */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.5 }}
+          animate={{ opacity: 0.45 }}
           transition={{ delay: 1, duration: 1 }}
-          className="text-xs md:text-sm tracking-[1.5em] font-medium uppercase text-zinc-400 -mt-2 md:-mt-6 ml-[1.5em]"
+          className="text-xs md:text-sm tracking-[1.8em] font-light uppercase text-zinc-400/90 -mt-4 md:-mt-8 ml-[1.8em]"
+          style={{ fontFamily: 'Space Grotesk' }}
         >
           designer . developer
         </motion.div>
       </div>
 
-      {/* Bottom Anchored Subtitle */}
+      {/* Bottom Anchored Subtitle - Editorial Calm Tone */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1.5 }}
-        className="absolute bottom-16 md:bottom-20 w-full px-12 md:px-24 flex flex-col md:flex-row justify-between items-end gap-8"
+        className="absolute bottom-16 md:bottom-20 w-full px-12 md:px-24 flex flex-col md:flex-row justify-between items-end gap-8 z-20"
       >
         <div className="max-w-md">
-          <p className="text-[11px] md:text-[13px] tracking-[0.3em] font-medium leading-relaxed uppercase text-zinc-500">
+          <p className="text-[11px] md:text-[13px] tracking-[0.35em] font-light leading-relaxed uppercase text-zinc-500/90">
             BUILDING WEBSITES, INTERFACES, AND SYSTEMS THAT FEEL ALIVE.
           </p>
         </div>
         <div className="flex flex-col items-end gap-1">
-          <span className="text-[10px] tracking-[0.4em] font-bold text-zinc-700">COORD // 37.77 / -122.41</span>
-          <span className="text-[10px] tracking-[0.4em] font-bold text-white/20 uppercase">Available for select projects</span>
+          <span className="text-[10px] tracking-[0.4em] font-medium text-zinc-700">COORD // 37.77 / -122.41</span>
+          <span className="text-[10px] tracking-[0.4em] font-medium text-white/20 uppercase">Available for select projects</span>
         </div>
       </motion.div>
     </section>
