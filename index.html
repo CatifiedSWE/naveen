@@ -89,10 +89,82 @@
         
         /* VHS Camera Frame Styling */
         .vhs-camera-frame {
-          background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+          background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 100%);
           box-shadow: 
-            0 4px 20px rgba(0, 0, 0, 0.5),
-            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            0 4px 20px rgba(0, 0, 0, 0.8),
+            inset 0 1px 0 rgba(255, 255, 255, 0.03),
+            inset 0 -1px 20px rgba(220, 38, 38, 0.1);
+          border-bottom: 2px solid rgba(220, 38, 38, 0.3);
+        }
+        
+        /* Heavy Film Grain Overlay */
+        .heavy-grain {
+          position: relative;
+        }
+        .heavy-grain::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-image: 
+            repeating-linear-gradient(0deg, rgba(0,0,0,0.15) 0px, transparent 1px, transparent 2px, rgba(0,0,0,0.15) 3px),
+            repeating-linear-gradient(90deg, rgba(0,0,0,0.15) 0px, transparent 1px, transparent 2px, rgba(0,0,0,0.15) 3px);
+          pointer-events: none;
+          opacity: 0.4;
+        }
+        
+        /* VHS Distortion Effect */
+        @keyframes vhs-distort {
+          0%, 100% { 
+            transform: translateX(0) skewX(0deg);
+            filter: hue-rotate(0deg);
+          }
+          20% { 
+            transform: translateX(-2px) skewX(0.5deg);
+            filter: hue-rotate(2deg);
+          }
+          40% { 
+            transform: translateX(2px) skewX(-0.5deg);
+            filter: hue-rotate(-2deg);
+          }
+          60% { 
+            transform: translateX(-1px) skewX(0.3deg);
+            filter: hue-rotate(1deg);
+          }
+          80% { 
+            transform: translateX(1px) skewX(-0.3deg);
+            filter: hue-rotate(-1deg);
+          }
+        }
+        .vhs-distortion {
+          animation: vhs-distort 0.8s infinite;
+        }
+        
+        /* Chromatic VHS Aberration */
+        .vhs-chromatic {
+          text-shadow: 
+            -2px 0 2px rgba(255, 0, 0, 0.5),
+            2px 0 2px rgba(0, 255, 255, 0.5),
+            0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Tape Tracking Lines */
+        @keyframes tracking-lines {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(100%); }
+        }
+        .tracking-lines {
+          position: relative;
+          overflow: hidden;
+        }
+        .tracking-lines::after {
+          content: '';
+          position: absolute;
+          top: -100%;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: rgba(255, 255, 255, 0.1);
+          animation: tracking-lines 3s linear infinite;
         }
         
         /* Micro Flicker */
