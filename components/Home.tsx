@@ -171,7 +171,7 @@ const BrutalistHero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.5 }}
           transition={{ delay: 1, duration: 1 }}
-          className="text-xs md:text-sm tracking-[1.8em] font-light uppercase text-zinc-400/90 -mt-4 md:-mt-8 ml-[1.8em] font-retro-mono"
+          className="text-xs md:text-sm tracking-[1.8em] font-light uppercase text-zinc-400/90 mt-2 md:mt-4 ml-[1.8em] font-retro-mono"
           style={{ 
             textShadow: '-1px 0 2px rgba(255, 0, 0, 0.3), 1px 0 2px rgba(0, 255, 255, 0.3)' 
           }}
