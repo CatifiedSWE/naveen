@@ -48,16 +48,16 @@ const Navbar: React.FC = () => {
     >
       <div className="flex items-center justify-between px-6 md:px-12 py-4 border-b border-white/5">
         {/* Left - IP Address */}
-        <div className="flex items-center gap-2 text-[9px] md:text-[10px] font-vhs text-green-400/70 tracking-wider">
-          <span className="text-green-500/50">ADDR</span>
-          <span className="text-green-400/80">{ipAddress}</span>
+        <div className="flex items-center gap-2 text-xs md:text-sm font-vhs text-green-400/90 tracking-wider">
+          <span className="text-green-500/70">ADDR</span>
+          <span className="text-green-400">{ipAddress}</span>
         </div>
 
         {/* Center - Date & Time */}
-        <div className="flex items-center gap-3 md:gap-4 text-[9px] md:text-[10px] font-vhs">
-          <span className="text-amber-200/80 tracking-widest">{currentDate}</span>
-          <span className="text-white/30">|</span>
-          <span className="text-amber-200/60 tracking-widest">{currentTime}</span>
+        <div className="flex items-center gap-3 md:gap-4 text-xs md:text-sm font-vhs">
+          <span className="text-amber-200 tracking-widest">{currentDate}</span>
+          <span className="text-white/40">|</span>
+          <span className="text-amber-200/80 tracking-widest">{currentTime}</span>
         </div>
 
         {/* Right - Empty or Could add something else */}

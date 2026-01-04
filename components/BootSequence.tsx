@@ -25,7 +25,9 @@ const BootSequence: React.FC<BootSequenceProps> = ({ onComplete }) => {
         current++;
       } else {
         clearInterval(interval);
-        setTimeout(onComplete, 1200);
+        // Changed from 1200ms to 2000ms to ensure minimum 5 second total display
+        // Total time: 700ms * 6 messages = 4200ms + 2000ms = 6200ms (over 5 seconds)
+        setTimeout(onComplete, 2000);
       }
     }, 700);
 
@@ -61,7 +63,7 @@ const BootSequence: React.FC<BootSequenceProps> = ({ onComplete }) => {
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
-              transition={{ duration: 4.5, ease: "easeInOut" }}
+              transition={{ duration: 5.5, ease: "easeInOut" }}
               className="absolute inset-0 bg-white/40"
             />
           </div>
