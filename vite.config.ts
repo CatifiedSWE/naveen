@@ -8,6 +8,11 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        allowedHosts: [
+          'analog-front.preview.emergentagent.com',
+          '.emergentagent.com',
+          'localhost'
+        ]
       },
       plugins: [react()],
       define: {
