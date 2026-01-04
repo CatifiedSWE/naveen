@@ -124,7 +124,7 @@ const BrutalistHero = () => {
             opacity: [0.15, 0.22, 0.15] 
           }}
           transition={{ duration: 0.2, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-red-400/40 blur-[3px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[9rem] md:text-[16rem] font-cormorant leading-none text-red-400/40 blur-[3px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -137,7 +137,7 @@ const BrutalistHero = () => {
             opacity: [0.15, 0.22, 0.15] 
           }}
           transition={{ duration: 0.2, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
-          className="absolute inset-0 text-[11rem] md:text-[19rem] font-retro-poster leading-none text-cyan-300/35 blur-[3px] pointer-events-none select-none text-center"
+          className="absolute inset-0 text-[9rem] md:text-[16rem] font-cormorant leading-none text-cyan-300/35 blur-[3px] pointer-events-none select-none text-center"
         >
           NAVEEN
         </motion.div>
@@ -147,7 +147,7 @@ const BrutalistHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative text-[11rem] md:text-[19rem] font-retro-poster leading-none text-center vhs-jitter cinematic-glow vhs-chromatic"
+          className="relative text-[9rem] md:text-[16rem] font-cormorant leading-none text-center vhs-jitter cinematic-glow vhs-chromatic"
           style={{ 
             color: '#f5f5dc',
             fontWeight: 400,
