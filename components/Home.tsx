@@ -18,14 +18,14 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 0.6, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="absolute top-24 left-8 md:top-36 md:left-16 z-30 text-[9px] md:text-[10px] font-retro-mono tracking-[0.3em] text-white/60 uppercase space-y-2 heavy-grain"
+        className="absolute top-28 left-8 md:top-40 md:left-16 z-30 text-[9px] md:text-[10px] font-retro-mono tracking-[0.3em] text-white/60 uppercase space-y-3 heavy-grain"
         style={{ textShadow: '-1px 0 2px rgba(255, 0, 0, 0.2), 1px 0 2px rgba(0, 255, 255, 0.2)' }}
       >
         <div className="flex items-center gap-2">
           <span className="text-white/80">■</span>
           <span className="vhs-chromatic">BUILD . SHIP . ITERATE</span>
         </div>
-        <div className="text-white/40 tracking-[0.2em] text-[8px] max-w-[180px] leading-relaxed">
+        <div className="text-white/40 tracking-[0.2em] text-[8px] max-w-[200px] leading-relaxed">
           A DIGITAL CRAFTSMAN DESIGNING<br/>AND DEVELOPING FOR THE WEB
         </div>
       </motion.div>
@@ -35,9 +35,9 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 0.6, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="absolute top-24 right-8 md:top-36 md:right-16 z-30 text-right heavy-grain"
+        className="absolute top-28 right-8 md:top-40 md:right-16 z-30 text-right heavy-grain"
       >
-        <div className="text-[9px] md:text-[10px] font-retro-mono tracking-[0.4em] text-white/70 mb-2 vhs-chromatic">
+        <div className="text-[9px] md:text-[10px] font-retro-mono tracking-[0.4em] text-white/70 mb-3 vhs-chromatic">
           2025
         </div>
         <div className="text-[8px] font-retro-mono tracking-widest text-white/40">
@@ -50,7 +50,7 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 0.5, y: 0 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="absolute bottom-8 left-8 md:bottom-16 md:left-16 z-30"
+        className="absolute bottom-12 left-8 md:bottom-20 md:left-16 z-30"
       >
         <span className="text-white/80 text-xl md:text-2xl">✕</span>
       </motion.div>
@@ -60,7 +60,7 @@ const BrutalistHero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 0.5, y: 0 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="absolute bottom-8 right-8 md:bottom-16 md:right-16 z-30"
+        className="absolute bottom-12 right-8 md:bottom-20 md:right-16 z-30"
       >
         <span className="text-white/80 text-xl md:text-2xl">✕</span>
       </motion.div>
